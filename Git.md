@@ -27,5 +27,6 @@
 `git pull --rebase origin master` - сделать fetch и rebase
 `git push -u origin master` - запушить, и связать локальный и удалённые репы
 
-SSH-keygen
+ssh-keygen
+cat .ssh/id_rsa.pub
 	
