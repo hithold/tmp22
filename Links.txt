@@ -1,0 +1,24 @@
+Платформы:
+https://rocketchat-nn-dec-24.21-school.ru
+https://edu.21-school.ru
+
+login@student.21-school.ru
+
+
+ByeDPI:
+https://github.com/hufrea/byedpi/releases/
+ciadpi - -i 127.0.0.1 -p 8080 -s1 -q1 -Y -Ar -s5 -o25000+s -At -f-1 -r1+s -As -s1 -o1+s -s-1 -An -b+500
+
+
+Radio:
+https://www.accuradio.com/accuclassical
+https://generative.fm
+https://mynoise.net
+
+GitHubs
+https://github.com/robotrainer/pool_school21/tree/master/pool_school21
+https://github.com/David-Dzhivanyan/s21pool
+https://teletype.in/@un9bot/R26JtrIiav9#8xKo
+
+AI
+https://duckduckgo.com/?q=DuckDuckGo&ia=chat
