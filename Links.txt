@@ -22,3 +22,47 @@ https://teletype.in/@un9bot/R26JtrIiav9#8xKo
 
 AI
 https://duckduckgo.com/?q=DuckDuckGo&ia=chat
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+double calculate_mean(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return (double)sum / size;
+}
+
+double calculate_standard_deviation(int arr[], int size, double mean) {
+    double sum_squared_diff = 0.0;
+    for (int i = 0; i < size; i++) {
+        sum_squared_diff += (arr[i] - mean) * (arr[i] - mean);
+    }
+    return sqrt(sum_squared_diff / size);
+}
+
+int follows_three_sigma_rule(int value, int arr[], int size) {
+    double mean = calculate_mean(arr, size);
+    double stddev = calculate_standard_deviation(arr, size, mean);
+    
+    // Проверяем, находится ли значение в пределах трех стандартных отклонений
+    return (value >= mean - 3 * stddev) && (value <= mean + 3 * stddev);
+}
+
+int main() {
+    int arr[] = {10, 12, 23, 23, 16, 23, 21, 16};
+    int size = sizeof(arr) / sizeof(arr[0]);
+    int value_to_check = 30; // Значение, которое нужно проверить
+
+    if (follows_three_sigma_rule(value_to_check, arr, size)) {
+        printf("Значение %d подчиняется правилу трех сигм.\n", value_to_check);
+    } else {
+        printf("Значение %d не подчиняется правилу трех сигм.\n", value_to_check);
+    }
+
+    return 0;
+}
+
